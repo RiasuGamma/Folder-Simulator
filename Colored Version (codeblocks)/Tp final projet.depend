@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1672171972 source:c:\users\gasmi family\desktop\tp finale.c\version avec couleurs (code blocks windows)\main.c
+	<stdio.h>
+	<string.h>
+	"sgflib.h"
+
+1672064496 c:\users\gasmi family\desktop\tp finale.c\version avec couleurs (code blocks windows)\sgflib.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	<malloc.h>
+
+1672155348 source:c:\users\gasmi family\desktop\tp finale.c\version avec couleurs (code blocks windows)\sgflib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sgflib.h"
+
