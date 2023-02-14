@@ -1,6 +1,3 @@
-//Bouderbala Med Islem
-//Gasmi Amir
-//Group: 02
 //if you are reading this, do 20 pull ups rn
 #include <stdio.h>
 #include <string.h>
@@ -61,7 +58,7 @@ int main()
         scanf("%d", &taille);
         SetColor(255);
     }
-    gets(unite);//---------------------------------CORBEILLE (ou l'unité de la taille)
+    gets(unite);//---------------------------------CORBEILLE (ou l'unitÃ© de la taille)
     SetColor(3);
     printf("\n>> Use Command");
     SetColor(13);
@@ -140,7 +137,7 @@ int main()
             }
 /*-------------------------------------*/
             if (compare_cmd(str, "special")){
-                printf("--------------------Î-------------------Î\n                    |                   |\n                    |   Amir Et Islam   |\n                    |                   |\n                    Î-------------------Î");
+                printf("--------------------ÃŽ-------------------ÃŽ\n                    |                   |\n                    |   Amir Et Islam   |\n                    |                   |\n                    ÃŽ-------------------ÃŽ");
                 goto retour;
             }
 /*-------------------------------------*/
@@ -300,7 +297,7 @@ int main()
                                 parcours_arbre(&temp ,p,buffer,&boolean1);
                                 if(serch_for_file(&temp, file->Nom)){
                                     copier=cpdir(temp);
-                                    vider(&(copier)->Frere); //-------------Pour eviter de copier les frêres
+                                    vider(&(copier)->Frere); //-------------Pour eviter de copier les frÃªres
                                     if(copier->Taille < size){
                                         temp=base;
                                         if(boolean1==1 && copier->Rep==0){
@@ -364,7 +361,7 @@ int main()
                             p=insert_queue(p, file->Nom);//----SI ON PEUT ECRIT A LA FORME: (OPERATION)(CHEMIN)(DOSSIER OU FICHIER)
                             parcours_arbre(&temp ,p,buffer,&boolean1);
                             copier=cpdir(temp);
-                            vider(&(copier)->Frere);//--------------Pour eviter de copier les frêres
+                            vider(&(copier)->Frere);//--------------Pour eviter de copier les frÃªres
                             if(get_size(copier) < size){
                                 temp=base;
                                 if(boolean1==1 && copier->Rep==1){
@@ -432,7 +429,7 @@ int main()
                                     if(boolean1 == 1){
                                         while(temp != NULL){
                                             copier = cpdir(temp);
-                                            vider(&(copier)->Frere);//--------------Pour eviter de copier les frêres
+                                            vider(&(copier)->Frere);//--------------Pour eviter de copier les frÃªres
                                             if(strcmp(copier->Nom, temp2->Nom) == 0){
                                                 vider(&(copier)->Fils);//--------------Pour eviter de copier les Fils deja copiee si le repertoire est le meme
                                                 copier->Fils = copier2;
